@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Refresh Me</h1>
+
+      <div class="dice">
+        <p>Player 1</p>
+        <img src="images/dice6.png" alt="">
+        <span id="player1" ></span>
+      </div>
+
+      <div class="dice">
+        <p>Player 2</p>
+        <img src="images/dice6.png" alt="">
+        <span id="player2" ></span>
+      </div>
+
+    </div>
+<div id="container"></div>
+<script src="index.js"></script>
+  </body>
+<!-- <script>
+function dice(){
+    let dice = ["dice1.png","dice2.png","dice3.png","dice4.png","dice5.png","dice6.png"];
+    let index = Math.floor(Math.random()* dice.length);
+    var firstDie = dice[index]
+    document.getElementById("player1").innerHTML= `<img id="dice1" src='/images/${dice[index]}'>`    
+    let index2 = Math.floor(Math.random()* dice.length);
+    document.getElementById("player2").innerHTML= `<img id="dice2" src='/images/${dice[index2]}'>`  
+    if(dice[index]===dice[index2]) {
+        document.querySelector("body > div.container > h1").innerHTML="Draw";
+    } 
+   else if(dice[index]>=dice[index2]) {
+        document.querySelector("body > div.container > h1").innerHTML=`Player 1 Wins! <img class="flag" style="float:left; width:40px" src="images/redflag.jpg">`;
+        
+    } 
+   else if(dice[index2]>=dice[index]) {
+        document.querySelector("body > div.container > h1").innerHTML=`Player 2 Wins! <img class="flag"style="float:right; width:40px" src="images/redflag.jpg">`;
+        
+    } 
+}
+
+dice()
+
+</script> -->
+  <footer>
+    www 🎲 App Brewery 🎲 com
+  </footer>
+</html>
